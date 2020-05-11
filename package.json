@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "server": "cd Backend && npm run start",
+    "dev": "concurrently \" npm run client \" \" npm run server \"",
+    "start": "cd Backend && npm && npm start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build",
+    "proxy": "http://localhost:5000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "concurrently": "^5.2.0"
+  }
+}

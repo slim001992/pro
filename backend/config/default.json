@@ -1,0 +1,4 @@
+{
+  "mongoUri": "mongodb+srv://slim:123@cluster0-dzt6v.mongodb.net/test?retryWrites=true&w=majority",
+  "secretOrKey": "MySecret"
+}
